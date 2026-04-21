@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo h2 {
+    color: #e60023;
+
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.explore-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.search-box input {
+    padding: 8px 14px 8px 30px;
+    border-radius: 20px;
+    border: none;
+    width: 250px;
+    background-color: #f1f1f1;
+
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.auth-button {
+    display: flex;
+    gap: 10px;
+}
+
+.login {
+    background-color: #e60023;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.signup {
+    background-color: #efefef;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D) center/cover no-repeat;
+    text-align: center;
+    filter: blur(8px);
+    transform: scale(1.1);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+.hero-content h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+.hero-span {
+    color: #407a57;
+
+}
+
+
+
+
+
+
+
+.gallery h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #e60023;
+    font-size: 52px;
+    letter-spacing: 1px;
+}
+
+.pin-container {
+    column-count: 4;
+    column-gap: 10px;
+    padding: 15px 30px;
+}
+
+.pin {
+    margin-bottom: 15px;
+    break-inside: avoid;
+}
+
+.pin-img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.pin-img:hover {
+    transform: scale(1.05);
+}
+
+.idea-text {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.idea-text h1 {
+    font-size: 20px;
+   margin-bottom: 15px;
+}
+
+.idea-text p {
+    font-size: 16px;
+    color: #555;
+    max-width: 700px;
+    margin: auto;
+}
+
+.feature-section {
+padding: 80px 20px;
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+    justify-content: space-between;
+}
+
+.feature.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature img {
+    width: 45%;
+    border-radius: 15px;
+}
+.feature-text h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.feature-text p {
+    margin-bottom: 20px;
+    color: #555;
+}
+.feature-text button {
+    background-color: #e60023;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #691e1e;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+.footer-content {
+    color: rgb(37, 11, 155);
+    font-size: 14px;
+    background-color: black;
+    align-items: center;
+    height: 100px;
+    width: 99%;
+    margin-top: 20px;
+    padding-top: 10px;
+    justify-content: center;
+}
+.footer-content h3 {
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+
+}
+.footer-content p {
+    align-items: center;
+    font-size: larger;
+}
